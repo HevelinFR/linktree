@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    outline: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    box-sizing: content-box;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+}
+
+a {
+    color: #fff;
+}
+
+.container {
+    width: 70%;
+    max-width: 600px;
+    margin: 0 auto;
+    background: linear-gradient(0, #120c56, #000000);
+    border-radius: 50px;
+    margin-top: 20vh;
+    padding: 30px;
+    text-align: center;
+}
+
+.stars {
+    position: relative;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    box-shadow: 50px 30px white, 100px 80px white, 80px 120px white, 300px 20px white, 250px 130px white, 200px 50px white, 150px 100px white, 320px 100px white, 400px 100px white, 400px 150px white, 500px 90px white, 380px 80px white, 600px 100px white, 450px 40px white, 460px 70px white;
+}
+
+@keyframes anim-stars {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-150px);
+    }
+}
+
+.stars {
+    animation: anim-stars 10s linear infinite;
+}
+
+.stars::after {
+    content: " ";
+    position: absolute;
+    top: 150px;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    box-shadow: 50px 30px white, 100px 80px white, 80px 120px white, 300px 20px white, 250px 130px white, 200px 50px white, 150px 100px white, 320px 100px white, 400px 100px white, 400px 150px white, 500px 90px white, 380px 80px white, 600px 100px white, 450px 40px white, 460px 70px white;
+}
+
+.container nav {
+    width: 45%;
+    margin: 0 auto;
+}
+
+.avatar {
+    background: #ffff;
+    width: 200px;
+    height: 190px;
+    margin: 0 auto;
+    border-radius: 200px;
+}
+
+.avatar img {
+    max-width: 70%;
+    margin-top: 23px;
+}
+
+.container ul {
+    list-style: none;
+}
+
+.container ul li {
+    padding: 10px 0 10px;
+    margin-top: 5px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    background: #D46992;
+    color: #1E1E2A;
+    cursor: pointer;
+    text-align: center;
+}
+
+.container ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    padding: 30px;
+    transition: .5s ease-in-out 0s;
+}
+
+.container ul li:hover {
+    background: #1E1E2A;
+    color: #fff;
+}
